@@ -1,0 +1,158 @@
+/* Apply a retro 8-bit style font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+/* Body styling - even darker red background */
+body {
+  background-color: #2b0000; /* even darker red */
+  color: #fff;
+  text-align: center;
+}
+
+/* Header section */
+.header {
+  padding: 2rem 1rem;
+  background-color: #3b0000; /* slightly lighter dark red */
+  border-bottom: 4px solid #0099cc; /* adjusted bluer highlight */
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px #0099cc; /* adjusted bluer shadow */
+}
+
+.header p {
+  font-size: 0.75rem;
+}
+
+/* Hero section */
+.hero {
+  padding: 2rem 1rem;
+  border-bottom: 4px solid #0099cc; /* adjusted bluer highlight */
+}
+
+/* Container to hold the image & text side by side */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* If you want them side by side in larger screens,
+   add a media query or remove flex-direction: column. */
+.imp-image {
+  max-width: 100%;
+  height: auto;
+  border: 4px solid #0099cc;
+  margin-bottom: 1rem;
+}
+
+.imp-info h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px #0099cc;
+}
+
+.imp-info p {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  max-width: 512px;
+  margin: 0 auto;
+}
+
+/* Roadmap section */
+.roadmap {
+  padding: 2rem 1rem;
+}
+
+.roadmap h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px #0099cc;
+}
+
+/* Roadmap block styling */
+.roadmap-block {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+/* Roadmap list styling */
+.roadmap-block ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Each roadmap item */
+.roadmap-block li {
+  background-color: #1b0000; /* even darker red for list items */
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: 2px solid #0099cc;
+  border-radius: 0; /* Removed rounded corners */
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* "Phase (n):" text styling (larger than rest) */
+.phase-label {
+  font-size: 1rem; /* Slightly larger than 0.8rem text */
+  margin-right: 0.5rem;
+}
+
+/* Status icons or text */
+.status {
+  font-weight: bold;
+}
+
+.success {
+  color: lime;
+}
+
+.wip {
+  color: yellow;
+}
+
+/* Buy Now Section */
+.buy-now {
+  margin: 2rem 0;
+}
+
+.buy-button {
+  display: inline-block;
+  background-color: #0099cc; /* Bluer highlight */
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 4px solid #005580; /* Slightly darker blue border */
+  text-shadow: 1px 1px #000;
+  box-shadow: 3px 3px #005580;
+  border-radius: 0; /* Sharp corners */
+}
+
+.buy-button:hover {
+  background-color: #0077aa; /* Darker blue on hover */
+  box-shadow: 2px 2px #00334d;
+}
+
+/* Footer section */
+.footer {
+  background-color: #3b0000;
+  padding: 1rem;
+  border-top: 4px solid #0099cc;
+}
+
+.footer p {
+  font-size: 0.7rem;
+  margin: 0;
+}
