@@ -44,8 +44,6 @@ body {
   justify-content: center;
 }
 
-/* If you want them side by side in larger screens,
-   add a media query or remove flex-direction: column. */
 .imp-image {
   max-width: 100%;
   height: auto;
@@ -77,39 +75,33 @@ body {
   text-shadow: 2px 2px #0099cc;
 }
 
-/* Roadmap block styling */
 .roadmap-block {
   max-width: 600px;
   margin: 2rem auto;
   text-align: left;
 }
 
-/* Roadmap list styling */
 .roadmap-block ul {
   list-style: none;
   padding-left: 0;
 }
 
-/* Each roadmap item */
 .roadmap-block li {
   background-color: #1b0000; /* even darker red for list items */
   margin: 0.5rem 0;
   padding: 1rem;
   border: 2px solid #0099cc;
-  border-radius: 0; /* Removed rounded corners */
   font-size: 0.8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* "Phase (n):" text styling (larger than rest) */
 .phase-label {
-  font-size: 1rem; /* Slightly larger than 0.8rem text */
+  font-size: 1rem;
   margin-right: 0.5rem;
 }
 
-/* Status icons or text */
 .status {
   font-weight: bold;
 }
@@ -122,12 +114,17 @@ body {
   color: yellow;
 }
 
-/* Buy Now Section */
-.buy-now {
+/* Buttons Section */
+.buttons-section {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
   margin: 2rem 0;
 }
 
-.buy-button {
+.community-button,
+.buy-button,
+.dex-button {
   display: inline-block;
   background-color: #0099cc; /* Bluer highlight */
   color: #fff;
@@ -138,11 +135,29 @@ body {
   text-shadow: 1px 1px #000;
   box-shadow: 3px 3px #005580;
   border-radius: 0; /* Sharp corners */
+  transition: transform 0.2s;
 }
 
-.buy-button:hover {
-  background-color: #0077aa; /* Darker blue on hover */
+.community-button:hover,
+.buy-button:hover,
+.dex-button:hover {
+  background-color: #0077aa;
   box-shadow: 2px 2px #00334d;
+}
+
+/* Contract Address Section */
+.contract-address {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem; /* Added extra space below the contract address */
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.contract-address .address {
+  font-size: 1rem;
+  color: #b3e6b3; /* Light green */
+  font-weight: bold;
 }
 
 /* Footer section */
@@ -154,5 +169,4 @@ body {
 
 .footer p {
   font-size: 0.7rem;
-  margin: 0;
 }
